@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "default_locale": "en",
+  "name": "Wikiwand Reloaded",
+  "description": "__MSG_extensionDescription__",
+  "author": "Andreas Bielawski",
+  "version": "1.0",
+  "icons" : {
+    "32" : "icons/32.png",
+    "64" : "icons/64.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.wikipedia.org/wiki/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
